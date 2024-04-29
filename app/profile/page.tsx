@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "profile page",
+};
+
 import React from "react";
 
 const page = () => {
