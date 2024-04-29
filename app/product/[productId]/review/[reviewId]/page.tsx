@@ -1,14 +1,21 @@
+import { notFound } from "next/navigation";
 import React from "react";
 
 const page = ({
   params,
 }: {
-  params: { productId: String; reviewId: String };
+  params: { productId: string; reviewId: string };
 }) => {
   return (
-    <h1>
-      product-{params.productId} , review -{params.reviewId}
-    </h1>
+    <>
+      {parseInt(params.reviewId) > 1000 ? (
+        notFound()
+      ) : (
+        <h1>
+          product-{params.productId} , review -{params.reviewId}
+        </h1>
+      )}
+    </>
   );
 };
 
