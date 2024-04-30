@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import React from "react";
 
-const page = () => {
+const OrderPage = () => {
   const router = useRouter();
 
   const handleOrder = () => {
@@ -19,4 +19,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default OrderPage;

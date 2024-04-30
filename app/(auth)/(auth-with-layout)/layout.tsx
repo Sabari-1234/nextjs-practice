@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 import React from "react";
 
-const layout = ({ children }: { children: React.ReactNode }) => {
+const AuthLayout = ({ children }: { children: React.ReactNode }) => {
   const links = [
     { name: "login", href: "/login" },
     { name: "register", href: "/register" },
@@ -33,4 +33,4 @@ const layout = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default layout;
+export default AuthLayout;
