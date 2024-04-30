@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+
 import React from "react";
 
 type props = {
@@ -14,7 +16,11 @@ export const generateMetadata = ({ params }: props): Metadata => {
 };
 
 const page = ({ params }: props) => {
-  return <h1>product -{params.productId}</h1>;
+  return (
+    <div>
+      <h1>product -{params.productId}</h1>
+    </div>
+  );
 };
 
 export default page;
