@@ -5,13 +5,17 @@ const ParallelLayout = ({
   users,
   revenue,
   notification,
+  login,
 }: {
   children: React.ReactNode;
   users: React.ReactNode;
   revenue: React.ReactNode;
   notification: React.ReactNode;
+  login: React.ReactNode;
 }) => {
-  return (
+  //const isLoggedIn = false;
+  const isLoggedIn = true;
+  return isLoggedIn ? (
     <div>
       <div>{children}</div>
       <div className=" flex ">
@@ -23,6 +27,8 @@ const ParallelLayout = ({
         <div>{notification}</div>
       </div>
     </div>
+  ) : (
+    login
   );
 };
 
