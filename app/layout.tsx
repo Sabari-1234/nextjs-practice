@@ -1,5 +1,12 @@
-export const metadata = {
-  title: "next.js practice ",
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  //title: "next.js practice ",
+  title: {
+    default: "default title",
+    //absolute:"absolute title",
+    template: "%s | sabarinathan",
+  },
   description:
     "i have knowledge in react so i am learning next with code evolution",
 };
