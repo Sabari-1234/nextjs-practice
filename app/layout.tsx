@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import "./global.css";
 
 export const metadata: Metadata = {
   //title: "next.js practice ",
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body>
         <header>
           <h1>header </h1>
+          {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}
         </header>
         {children}
         <footer>
