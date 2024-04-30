@@ -5,8 +5,8 @@ import React from "react";
 const page = () => {
   return (
     <Card>
-      <h1>notification page</h1>
-      <Link href={"/dashboard-parrallel-route/archived"}>archive</Link>
+      <h1>Archived notification page</h1>
+      <Link href={"/dashboard-parrallel-route"}>default</Link>
     </Card>
   );
 };
